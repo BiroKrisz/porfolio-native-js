@@ -4,7 +4,7 @@
     text-align: center;
 
     @include tablet-down {
-        padding: 0;
+        padding-left: 1rem;
     }
    
 }

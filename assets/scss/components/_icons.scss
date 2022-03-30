@@ -12,17 +12,17 @@
     }
 }
 
-.fa {
-    color: let(colors-footer);
-    opacity: 0.9;
-    &:hover {
-        opacity: 1;
-    }
-    &-github, &-linkedin, &-envelope {
-        color: let(colors-white);
+ .fa {
+        color: let(colors-footer);
+        opacity: 0.9;
         &:hover {
-            color: let(colors-yellow);
-            transition: color 0.3s ease-in;
+            opacity: 1;
+        }
+        &-github, &-linkedin, &-envelope {
+            color: let(colors-white);
+            &:hover {
+                color: let(colors-yellow);
+                transition: color 0.3s ease-in;
+            }
         }
     }
-}
