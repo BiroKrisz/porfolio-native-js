@@ -58,6 +58,10 @@
                 color: let(colors-footer);
                 text-decoration: none;
             }
+
+            & i:hover {
+                color: let(colors-white)
+            }
         }
     }
 }

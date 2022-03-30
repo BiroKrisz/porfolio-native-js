@@ -152,6 +152,9 @@ p,
   color: #2a2a2a;
   text-decoration: none;
 }
+.menu .menu__item-link i:hover {
+  color: #ffffff;
+}
 
 .menu__hamburger {
   display: block;
