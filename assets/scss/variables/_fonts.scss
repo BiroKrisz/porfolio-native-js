@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Muli';
+    src: url("src/assets/Mulish-VariableFont_wght.ttf") format ("tff");
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("src/assets/fonts/Lato-Regular.ttf") format ("tff");
+}
+
+@font-face {
+    font-family: 'Catamaran';
+    src: url("src/fonts/Catamaran-Thin.ttf") format ("tff");
+}
+
+
+$catamaran: 'Catamaran', Helvetica, Arial, sans-serif;
+$mulish: 'Mulish', Helvetica, Arial, sans-serif;
+$lato: 'Lato', Helvetica, Arial, sans-serif;

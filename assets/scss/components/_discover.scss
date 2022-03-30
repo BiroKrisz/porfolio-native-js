@@ -1,0 +1,34 @@
+.discover {
+    
+    padding: 8rem 3rem;
+    background-color: let(colors-lightGrey);
+    
+    &__img {
+        padding: 1.5rem;
+        width: 95%;
+        transition: filter ease 0.5s;
+
+        @include tablet-up {
+           width: 70%
+        }
+
+        &:hover { 
+            @include grayscale(60%) 
+        }
+    }
+
+    & h2 {
+        color: let(colors-footer);
+        font-size: 3rem;
+
+        @include mobile-down {
+            font-size:2rem;
+        }
+    }
+
+    & .button {
+        @include tablet-down{
+            text-align: center;
+        }
+    }
+}

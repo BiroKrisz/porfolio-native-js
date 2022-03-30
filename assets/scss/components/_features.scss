@@ -1,0 +1,35 @@
+.tool {
+    background-color: let(colors-lightGrey);
+    padding: 3rem;
+    text-align: center;
+
+    @include tablet-down {
+        padding: 0;
+    }
+   
+}
+
+.features {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
+    @include tablet-up {
+        margin-top: 3rem;
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+
+    &__row {
+        padding-top: 7.3rem;
+        @include tablet-up {
+            padding: 0;
+        }
+    }
+
+    &__item {
+        padding-bottom: 5rem;
+        @include tablet-up{
+            padding-bottom: 0;
+        }
+    }
+}

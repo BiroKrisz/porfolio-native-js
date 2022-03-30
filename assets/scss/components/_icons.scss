@@ -1,0 +1,28 @@
+.icons {
+    padding: 1rem;
+
+    & img {
+        max-width: 5rem;
+        margin: 0.5rem;
+    }
+
+    & i {
+        font-size: 4rem;
+        color: let(colors-icons);
+    }
+}
+
+.fa {
+    color: let(colors-footer);
+    opacity: 0.9;
+    &:hover {
+        opacity: 1;
+    }
+    &-github, &-linkedin, &-envelope {
+        color: let(colors-white);
+        &:hover {
+            color: let(colors-yellow);
+            transition: color 0.3s ease-in;
+        }
+    }
+}

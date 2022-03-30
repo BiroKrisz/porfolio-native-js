@@ -1,0 +1,12 @@
+.footer {
+    background-color: let(colors-footer);
+    color: let(colors-black);
+    padding: 3rem 0;
+    text-align: center;
+
+    & p {
+        color: let(colors-darkerGrey);
+        margin-bottom: 0.25rem;
+    }
+
+}

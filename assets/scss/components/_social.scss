@@ -1,0 +1,31 @@
+.hello {
+    box-shadow: 0px -5px 20px 0px rgba(0, 0, 0, 0.5);
+    color: let(colors-footer);
+    padding: 4rem 2rem;
+    background: let(colors-yellow);
+    text-align: center;
+
+    & p {
+        font-size: 1.3rem;
+        @include tablet-up {
+            padding-left: 5rem;
+        }
+    }
+
+    &__container > nav {
+        justify-content: center;
+    }
+}
+
+.hello__content {
+    text-align: left;
+}
+
+.line {
+    background-color: let(colors-footer);
+    display: block;
+    max-width: 25%;
+    margin: auto;
+    min-height: 0.5px;
+    max-height: 1px;
+}
