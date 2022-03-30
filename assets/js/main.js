@@ -1,11 +1,15 @@
-var scroll = new SmoothScroll('a[href*="#"]', {
+// <----- scrolling ----->
+
+const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 300
 });
 
+// <----- tooltip for BS ----->
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+// <------ navbar ------>
 $window = $('window')
 $hamburger = $('.menu__hamburger');
 $menu = $('.menu');
@@ -18,7 +22,7 @@ function switchState() {
   $hamburger.toggleClass('is-active');
 }
 
-var barsInSequence = [{
+const barsInSequence = [{
     e: $menuSidebar,
     p: {
       translateX: '-100%'
@@ -58,7 +62,7 @@ var barsInSequence = [{
 
 ];
 
-var barsOutSequence = [{
+const barsOutSequence = [{
   e: $($($menuItems).get().reverse()),
   p: 'transition.slideLeftOut',
   o: {

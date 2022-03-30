@@ -6,9 +6,11 @@
     text-align: center;
 
     & p {
+        text-indent: -0.4rem;
         font-size: 1.2rem;
         @include tablet-up {
             padding-left: 5rem;
+            text-indent: 0;
         }
     }
 

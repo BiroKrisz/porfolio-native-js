@@ -20,6 +20,10 @@ hr {
   max-width: 70%;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 .title__header,
 .stop-waiting__header {
   font-weight: 100;
@@ -295,13 +299,13 @@ p,
   transform: skew(0, 7deg);
   background-color: #fdcc52;
 }
-.title__container-inner h2 {
+.title__container-inner h1 {
   text-align: center;
   transform: skew(0, -7deg);
   font-size: 2.2rem;
 }
 @media only screen and (max-width: 400px) {
-  .title__container-inner h2 {
+  .title__container-inner h1 {
     font-size: 1.5rem;
   }
 }
@@ -510,11 +514,13 @@ p,
   text-align: center;
 }
 .hello p {
+  text-indent: -0.4rem;
   font-size: 1.2rem;
 }
 @media only screen and (min-width: 992px) {
   .hello p {
     padding-left: 5rem;
+    text-indent: 0;
   }
 }
 .hello__container > nav {
