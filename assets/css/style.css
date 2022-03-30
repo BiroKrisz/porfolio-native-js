@@ -101,8 +101,12 @@ p,
   height: 100%;
   z-index: 99;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+@media only screen and (min-width: 992px) {
+  .menu__sidebar {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .menu__content {
   transform: translateX(-100%);
@@ -296,7 +300,7 @@ p,
   transform: skew(0, -7deg);
   font-size: 2.2rem;
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .title__container-inner h2 {
     font-size: 1.5rem;
   }
@@ -362,7 +366,7 @@ p,
   text-transform: uppercase;
   background-color: #fdcc52;
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .phone__text {
     padding: 1rem;
   }
@@ -371,7 +375,7 @@ p,
   text-align: center;
   transform: skew(0, 7deg);
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .phone__text-inner h5 {
     font-size: 70%;
   }
@@ -394,7 +398,7 @@ p,
 }
 
 .discover {
-  padding: 8rem 3rem;
+  padding: 8rem 1rem;
   background-color: #f9f9f9;
 }
 .discover__img {
@@ -408,13 +412,17 @@ p,
   }
 }
 .discover__img:hover {
-  filter: grayscale(10%);
+  filter: grayscale(1%);
+}
+.discover p {
+  font-size: 1.2rem;
+  color: #2a2a2a;
 }
 .discover h2 {
   color: #2a2a2a;
   font-size: 3rem;
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .discover h2 {
     font-size: 2rem;
   }
@@ -444,7 +452,6 @@ p,
 @media only screen and (min-width: 992px) {
   .features {
     margin-top: 3rem;
-    padding-left: 0;
     padding-top: 3rem;
   }
 }
@@ -478,7 +485,7 @@ p,
 }
 @media only screen and (max-width: 992px) {
   .stop-waiting {
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
 }
 .stop-waiting__container {
@@ -498,12 +505,12 @@ p,
 .hello {
   box-shadow: 0px -5px 20px 0px rgba(0, 0, 0, 0.5);
   color: #2a2a2a;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   background: #fdcc52;
   text-align: center;
 }
 .hello p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 @media only screen and (min-width: 992px) {
   .hello p {

@@ -1,6 +1,6 @@
 .discover {
     
-    padding: 8rem 3rem;
+    padding: 8rem 1rem;
     background-color: let(colors-lightGrey);
     
     &__img {
@@ -13,8 +13,13 @@
         }
 
         &:hover { 
-            @include grayscale(10%) 
+            @include grayscale(1%) 
         }
+    }
+
+    & p {
+        font-size: 1.2rem;
+        color: let(colors-footer)
     }
 
     & h2 {
