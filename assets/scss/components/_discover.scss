@@ -11,10 +11,6 @@
         @include tablet-up {
            width: 70%
         }
-
-        &:hover { 
-            @include grayscale(1%) 
-        }
     }
 
     & p {

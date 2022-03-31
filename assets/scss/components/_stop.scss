@@ -3,11 +3,6 @@
     background-color: let(colors-footer);
     color: let(colors-white);
 
-    @include tablet-up {
-        padding-left: 6rem;
-        padding-right: 3rem;
-    }
-
     @include tablet-down {
         padding-left: 0rem;
     }
@@ -16,6 +11,10 @@
         padding-left: 3rem;
         padding-bottom: 12rem;
         padding-top: 12rem;
+        @include tablet-up {
+            padding-left: 6rem;
+            padding-right: 3rem;
+        }
     }
 }
 .work-line {
@@ -24,4 +23,20 @@
     max-width: 25%;
     min-height: 0.5px;
     max-height: 1px;
+}
+
+.work__container {
+    padding: 0rem 2.5rem;
+
+    & img {
+        max-width: 100%;
+        object-fit: cover;
+        padding: 1rem;
+
+        @include grayscale(70%);
+
+        &:hover {
+            @include grayscale(0%)
+        }
+    }
 }
