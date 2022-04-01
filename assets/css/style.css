@@ -476,7 +476,7 @@ p,
 .stop-waiting {
   display: block;
   background-color: #2a2a2a;
-  color: #ffffff;
+  color: #f9f9f9;
 }
 @media only screen and (max-width: 992px) {
   .stop-waiting {
@@ -503,8 +503,10 @@ p,
   max-height: 1px;
 }
 
-.work__container {
-  padding: 0rem 2.5rem;
+@media only screen and (min-width: 992px) {
+  .work__container {
+    padding: 0rem 5rem;
+  }
 }
 .work__container img {
   max-width: 100%;
@@ -514,6 +516,11 @@ p,
 }
 .work__container img:hover {
   filter: grayscale(0%);
+}
+.work__container p {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .hello {

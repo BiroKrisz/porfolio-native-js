@@ -1,7 +1,7 @@
 .stop-waiting {
     display: block;
     background-color: let(colors-footer);
-    color: let(colors-white);
+    color: let(colors-lightGrey);
 
     @include tablet-down {
         padding-left: 0rem;
@@ -26,7 +26,10 @@
 }
 
 .work__container {
-    padding: 0rem 2.5rem;
+
+    @include tablet-up { 
+        padding: 0rem 5rem;
+    };
 
     & img {
         max-width: 100%;
@@ -38,5 +41,11 @@
         &:hover {
             @include grayscale(0%)
         }
+    }
+
+    p {
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
