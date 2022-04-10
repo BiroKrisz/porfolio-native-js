@@ -1,5 +1,4 @@
-.stop-waiting {
-    display: block;
+.work {
     background-color: let(colors-footer);
     color: let(colors-lightGrey);
 
@@ -9,14 +8,16 @@
 
     &__container {
         padding-left: 3rem;
-        padding-bottom: 12rem;
-        padding-top: 12rem;
+        padding-bottom: 6rem;
+        padding-top: 6rem;
         @include tablet-up {
             padding-left: 6rem;
             padding-right: 3rem;
         }
     }
 }
+
+
 .work-line {
     background-color: let(colors-yellow);
     display: block;
@@ -25,11 +26,13 @@
     max-height: 1px;
 }
 
-.work__container {
-
+.works {
+    padding: 1.5rem;
+    
     @include tablet-up { 
-        padding: 0rem 5rem;
+        padding: 1rem 5rem;
     };
+
 
     & img {
         max-width: 100%;
@@ -48,4 +51,17 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+}
+
+.card {
+    background-color: let(colors-yellow);
+    color: let(colors-footer);
+  
+    height: 95%;
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+}
+
+.button {
+    padding: 1rem;
 }

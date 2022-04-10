@@ -25,11 +25,11 @@ a, a:hover {
 }
 
 .title__header,
-.stop-waiting__header {
+.work__header {
   font-weight: 100;
 }
 
-.discover__header {
+.eldorado__header {
   font-weight: 300;
 }
 
@@ -68,6 +68,29 @@ p,
   background-color: #fdcc52;
   border: 1px solid #fdcc52;
   color: #ffffff;
+}
+.btn-primary {
+  color: #fdcc52;
+  text-transform: uppercase;
+  background-color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  border-radius: 99rem;
+  font-size: 0.8rem;
+  line-height: 2.6rem;
+  padding: 0.8rem 2.3rem;
+  transition: border 0.3s ease-in, background-color 0.3s ease-in;
+}
+.btn-primary .fa {
+  color: #fdcc52;
+  font-size: 1.1rem;
+}
+.btn-primary:hover {
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  color: #2a2a2a;
+}
+.btn-primary:hover .fa {
+  color: #2a2a2a;
 }
 
 .icons {
@@ -401,35 +424,35 @@ p,
   }
 }
 
-.discover {
+.eldorado {
   padding: 8rem 1rem;
   background-color: #f9f9f9;
 }
-.discover__img {
+.eldorado__img {
   padding: 1.5rem;
   width: 95%;
   transition: filter ease 0.5s;
 }
 @media only screen and (min-width: 992px) {
-  .discover__img {
+  .eldorado__img {
     width: 70%;
   }
 }
-.discover p {
+.eldorado p {
   font-size: 1.2rem;
   color: #2a2a2a;
 }
-.discover h2 {
+.eldorado h2 {
   color: #2a2a2a;
   font-size: 3rem;
 }
 @media only screen and (max-width: 400px) {
-  .discover h2 {
+  .eldorado h2 {
     font-size: 2rem;
   }
 }
 @media only screen and (max-width: 992px) {
-  .discover .button {
+  .eldorado .button {
     text-align: center;
   }
 }
@@ -473,23 +496,22 @@ p,
   }
 }
 
-.stop-waiting {
-  display: block;
+.work {
   background-color: #2a2a2a;
   color: #f9f9f9;
 }
 @media only screen and (max-width: 992px) {
-  .stop-waiting {
+  .work {
     padding-left: 0rem;
   }
 }
-.stop-waiting__container {
+.work__container {
   padding-left: 3rem;
-  padding-bottom: 12rem;
-  padding-top: 12rem;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
 }
 @media only screen and (min-width: 992px) {
-  .stop-waiting__container {
+  .work__container {
     padding-left: 6rem;
     padding-right: 3rem;
   }
@@ -503,24 +525,39 @@ p,
   max-height: 1px;
 }
 
+.works {
+  padding: 1.5rem;
+}
 @media only screen and (min-width: 992px) {
-  .work__container {
-    padding: 0rem 5rem;
+  .works {
+    padding: 1rem 5rem;
   }
 }
-.work__container img {
+.works img {
   max-width: 100%;
   object-fit: cover;
   padding: 1rem;
   filter: grayscale(70%);
 }
-.work__container img:hover {
+.works img:hover {
   filter: grayscale(0%);
 }
-.work__container p {
+.works p {
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.card {
+  background-color: #fdcc52;
+  color: #2a2a2a;
+  height: 95%;
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+}
+
+.button {
+  padding: 1rem;
 }
 
 .hello {

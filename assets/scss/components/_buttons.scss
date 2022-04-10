@@ -16,4 +16,31 @@
             color: let(colors-white);
         }
     };
+
+    &-primary {
+        color: let(colors-yellow);
+        text-transform: uppercase;
+        background-color: let(colors-footer);
+        border: 1px solid let(colors-footer);
+        border-radius: 99rem;
+        font-size: 0.8rem;
+        line-height: 2.6rem;
+        padding: 0.8rem 2.3rem;
+        transition: border 0.3s ease-in, background-color 0.3s ease-in;
+
+        & .fa {
+            color: let(colors-yellow);
+            font-size: 1.1rem;
+        }
+
+        &:hover {
+            background-color: let(colors-lightGrey);
+            border: 1px solid let(colors-lightGrey);
+            color: let(colors-footer);
+
+            & .fa {
+                color: let(colors-footer);
+            }
+        }
+    };
 }
