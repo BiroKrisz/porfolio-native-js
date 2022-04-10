@@ -10,7 +10,9 @@
         padding-left: 3rem;
         padding-bottom: 6rem;
         padding-top: 6rem;
+
         @include tablet-up {
+            padding-bottom: 3rem;
             padding-left: 6rem;
             padding-right: 3rem;
         }
@@ -27,14 +29,14 @@
 }
 
 .works {
+
     padding: 1.5rem;
     
-    @include tablet-up { 
-        padding: 1rem 5rem;
-    };
+    @include tablet-up {
+        padding: 0 5rem;
+    }
 
-
-    & img {
+    & .cover img {
         max-width: 100%;
         object-fit: cover;
         padding: 1rem;
@@ -44,9 +46,22 @@
         &:hover {
             @include grayscale(0%)
         }
+
+        @include tablet-up {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+
     }
 
-    p {
+    & .h3 {
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    & p {
         padding-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
@@ -56,7 +71,8 @@
 .card {
     background-color: let(colors-yellow);
     color: let(colors-footer);
-  
+    box-shadow: rgba(0, 0, 0, 0.888) 0px 4px 10px;
+
     height: 95%;
     margin: 2rem 0;
     padding-bottom: 1rem;
