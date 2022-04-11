@@ -32,8 +32,8 @@
             font-size: 1.1rem;
         }
 
-        &:hover {
-            background-color: let(colors-lightGrey);
+        &:hover, &:active, &:focus {
+            background-color: let(colors-lightGrey) !important;
             border: 1px solid let(colors-yellow);
             color: let(colors-footer);
             transition: border 0.3s ease-in, background-color 0.3s ease-in;

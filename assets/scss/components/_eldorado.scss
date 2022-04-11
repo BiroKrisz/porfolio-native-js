@@ -1,5 +1,5 @@
 .eldorado {
-    padding: 8rem 1rem;
+    padding: 5.5rem 1rem;
     background-color: let(colors-lightGrey);
     
     &__img {
@@ -8,7 +8,7 @@
         transition: filter ease 0.5s;
 
         @include tablet-up {
-           width: 70%
+           width: 60%
         }
     }
 

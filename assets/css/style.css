@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Muli";
-  src: url("src/assets/Mulish-VariableFont_wght.ttf") format "tff";
+  src: ur("/assets/Mulish-VariableFont_wght.ttf") format "tff";
 }
 @font-face {
   font-family: "Lato";
-  src: url("src/assets/fonts/Lato-Regular.ttf") format "tff";
+  src: url("/assets/fonts/Lato-Regular.ttf") format "tff";
 }
 @font-face {
   font-family: "Catamaran";
-  src: url("src/fonts/Catamaran-Thin.ttf") format "tff";
+  src: url("/assets/fonts/Catamaran-Thin.ttf") format "tff";
 }
 body {
   height: 100%;
@@ -83,13 +83,13 @@ p,
   color: #fdcc52;
   font-size: 1.1rem;
 }
-.btn-primary:hover {
-  background-color: #f9f9f9;
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #f9f9f9 !important;
   border: 1px solid #fdcc52;
   color: #2a2a2a;
   transition: border 0.3s ease-in, background-color 0.3s ease-in;
 }
-.btn-primary:hover .fa {
+.btn-primary:hover .fa, .btn-primary:active .fa, .btn-primary:focus .fa {
   color: #2a2a2a;
 }
 
@@ -425,7 +425,7 @@ p,
 }
 
 .eldorado {
-  padding: 8rem 1rem;
+  padding: 5.5rem 1rem;
   background-color: #f9f9f9;
 }
 .eldorado__img {
@@ -435,7 +435,7 @@ p,
 }
 @media only screen and (min-width: 992px) {
   .eldorado__img {
-    width: 70%;
+    width: 60%;
   }
 }
 .eldorado p {
@@ -458,6 +458,12 @@ p,
 }
 
 .tool {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   background-color: #f9f9f9;
   padding: 3rem;
   text-align: center;
@@ -497,6 +503,12 @@ p,
 }
 
 .work {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   background-color: #2a2a2a;
   color: #f9f9f9;
 }
@@ -568,6 +580,9 @@ p,
   height: 95%;
   margin: 2rem 0;
   padding-bottom: 1rem;
+}
+.card-footer {
+  height: 10%;
 }
 
 .button {
